@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자기소개</title>
+    <link rel="stylesheet" href="self_introduce.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gowun+Batang&family=Jost:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Hello Everyone :)</h1>
+        <nav>
+            <ul>
+                <li><a href="#profile-field">Profile</a></li>
+                <li><a href="#Hobby">Hobby</a></li>
+                <li><a href="#goal">Goal</a></li>
+                <li><a href="#Shared">Share</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <fieldset id="profile-field">
+            <legend>Profile</legend>
+            <div class="profile">
+                <div class="profile-left">
+                    <img src="제리짤.gif" alt="Profile image">
+                    <h4 class="name">안녕하세요 :)</h4>
+                </div>
+                <div class="profile-right">
+                    <ul class="profile-details">
+                        <li><span>Name </span>박교녕</li>
+                        <li><span>BirthDay </span>2001.01.25</li>
+                        <li><span>Major </span>컴퓨터공학과</li>
+                        <li><span>MBTI </span>ISTP</li>
+                        <li><span>Phone </span>010-8229-1474</li>
+                        <li><span>E-mail </span>rysud0125@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+        </fieldset>
+    </section>
+    <section>
+        <fieldset id="Hobby">
+            <legend>Hobby</legend>
+            <div class="hobby-container">
+                <div class="hobby-list">
+                    <div class="hobby-item">
+                        <input type="radio" name="hobby" id="game" value="game">
+                        <label for="game">🎮 게임하기(칼바람 or 5인큐)</label>
+                    </div>
+                    <div class="hobby-item">
+                        <input type="radio" name="hobby" id="music" value="music">
+                        <label for="music">🎵 피아노 연주/연주회 보러가기</label>
+                    </div>
+                    <div class="hobby-item">
+                        <input type="radio" name="hobby" id="baseball" value="baseball" checked>
+                        <label for="baseball">⚾ 야구 직관/집관(TVING 구독단)</label>
+                    </div>
+                    <div class="hobby-item">
+                        <input type="radio" name="hobby" id="drink" value="drink">
+                        <label for="drink">🍺 가끔 술 한 잔</label>
+                    </div>
+                </div>
+                <div class="hobby-image-container">
+                    <img id="hobby-image" src="baseball.png" alt="Hobby Image">
+                </div>
+            </div>
+        </fieldset>
+    </section>
+    <script src="script.js"></script>
+    <section>
+        <fieldset id="goal">
+            <legend>Goal</legend>
+            <div class="goals-container">
+                <!-- 첫 번째 목표 -->
+                <div class="goal-item">
+                    <p>📝 작은 사이트 만들어서 구글 광고 달아보기</p>
+                </div>
+                <!-- 두 번째 목표 -->
+                <div class="goal-item">
+                    <p>💻 꾸준히 공부해서 프론트엔드 고수되기</p>
+                </div>
+                <!-- 세 번째 목표 -->
+                <div class="goal-item">
+                    <p>🏆 취업 성공하기</p>
+                </div>
+            </div>
+        </fieldset>
+    </section>
+    <section>
+        <fieldset id="Shared">
+            <legend>공유하고 싶은 것</legend>
+            <p class="comment">하와이 여행 갔을 때</p>
+            <div class="shared-container">
+                <!-- 첫 번째 이미지 -->
+                <div class="shared-item">
+                    <img src="morning.png" alt="무지개">
+                    <p>비오고 뜨는 무지개</p>
+                </div>
+                <!-- 두 번째 이미지 -->
+                <div class="shared-item">
+                    <img src="beach.png" alt="아침 해변">
+                    <p>낮에 찍은 와이키키</p>
+                </div>
+                <!-- 세 번째 이미지 -->
+                <div class="shared-item">
+                    <img src="twilight.png" alt="석양 해변">
+                    <p>해 질녘 바다 풍경</p>
+                </div>
+            </div>
+            
+        </fieldset>
+    </section>
+    <footer>
+        <p>
+            <a href="https://github.com/kny0ng125">
+                <img src="github-sign.png" alt="GitHub" class="icon"> Github
+            </a>
+        </p>
+        <p>
+            <a href="https://www.instagram.com/kny00ng_/">
+                <img src="instagram.png" alt="Instagram" class="icon"> Instagram
+            </a>
+        </p>
+    </footer>
+</body>
+</html>

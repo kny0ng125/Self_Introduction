@@ -1,0 +1,360 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Gowun Batang", serif;
+    font-weight: 400;
+    font-style: normal;
+    transition: 0.3s;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+header {
+    padding: 10px 30px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #7bc7b6;
+    color: white;
+    text-align: left;
+    font-size: 0.8rem;
+}
+
+header h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+header nav {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    justify-content: space-evenly;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: green;
+}
+
+section {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #2d8f66;
+}
+
+/* Profile Section Styles */
+#profile-field {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+#profile-field legend {
+    font-size: 1.5rem;
+    color: #2d8f66;
+    padding: 0 10px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.profile {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 30px 20px;
+    gap: 40px;
+}
+
+.profile-left {
+    flex: 1;
+    text-align: center;
+}
+
+.profile-right {
+    flex: 1;
+}
+
+/* 프로필 이미지 */
+.profile-left img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 30px;
+    object-fit: cover;
+    object-position: center;
+    transform: scale(1.2);
+}
+
+/* 프로필 상세 정보 */
+.profile-details {
+    list-style: none;
+    padding: 0;
+}
+
+.profile-details li {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+.profile-details span {
+    font-weight: 600;
+    color: #1f5a41;
+    border-right: 1px solid #a2e4c8;
+    padding-right: 12px;
+    margin-right: 12px;
+}
+
+/* Hobby Section Styles */
+#Hobby {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+#Hobby legend {
+    font-size: 1.5rem;
+    color: #2d8f66;
+    padding: 0 10px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+/* Hobby 전체 컨테이너 */
+.hobby-container {
+    margin-inline: 20px;
+    display: flex;
+    justify-content: space-between; /* 리스트와 이미지를 양쪽으로 배치 */
+    align-items: flex-start;
+    gap: 10px;
+}
+
+/* Hobby 리스트 */
+.hobby-list {
+    height: 300px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+
+.hobby-item {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* 라디오 버튼 숨김 */
+input[type="radio"] {
+    display: none;
+}
+
+/* 라벨 스타일 */
+label {
+    width: 100%;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f4f4f4;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* 선택된 라벨 스타일 */
+input[type="radio"]:checked + label {
+    background-color: #7bc7b6;
+    color: white;
+}
+
+/* 라벨 호버 스타일 */
+label:hover {
+    background-color: #e0f0e0;
+}
+
+/* Hobby 이미지 컨테이너 */
+.hobby-image-container {
+    flex: 0 0 300px; /* 고정된 크기 */
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden; /* 이미지가 컨테이너를 넘지 않게 */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Hobby 이미지 */
+.hobby-image {
+    width: 100%;
+    height: 100%;
+    object-fit: none; /* 이미지를 컨테이너에 꽉 채움 */
+    object-position: center; /* 이미지 중심 정렬 */
+}
+
+
+.goals-container {
+    display: flex;
+    justify-content: left;
+    gap: 20px; /* 목표 간 간격 */
+    flex-wrap: wrap; /* 화면 크기에 따라 줄바꿈 */
+}
+
+#goal {
+    border: none;
+    margin: 0 ;
+    padding: 10px;
+    max-width: 900px;
+
+}
+
+#goal legend {
+    font-size: 1.5rem;
+    color: #2d8f66;
+    padding: 0;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+
+
+/* Goal 아이템 */
+.goal-item {
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 500px;
+    text-align: left;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* 아이콘과 텍스트 간 간격 */
+}
+
+.goal-item img {
+    width: 50px; /* 아이콘 크기 */
+    height: 50px;
+    object-fit: contain;
+}
+
+.goal-item p {
+    font-size: 1rem;
+    color: #555;
+    margin: 0;
+}
+
+#Shared {
+    border: none;
+    margin: 0 auto;
+    padding: 10px;
+    max-width: 900px;
+
+}
+
+#Shared legend {
+    font-size: 1.5rem;
+    color: #2d8f66;
+    padding: 0 ;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+
+/* Shared 컨테이너 */
+.shared-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* 카드 간의 간격 */
+    flex-wrap: wrap; /* 화면 크기에 따라 줄바꿈 */
+}
+
+.comment{
+    font-weight: 600;
+    margin-bottom: 5px;
+    text-align: center;
+    font-size: 1.2rem;
+    color: green;
+}
+
+/* Shared 아이템 */
+.shared-item {
+    border: 1px solid #ddd;
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 230px;
+    text-align: center;
+}
+
+.shared-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover; /* 이미지가 컨테이너를 꽉 채움 */
+    border-bottom: 2px solid #ddd;
+}
+
+.shared-item p {
+    font-size: 1rem;
+    color: #555;
+    margin: 10px 0;
+}
+
+
+/* Footer Styles */
+footer {
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 2rem;
+    padding: 1rem;
+    background: #7bc7b6;
+    color: white;
+}
+
+footer p {
+    margin: 0px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #f4f4f9;
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    margin-right: 8px;
+    width: 20px;
+    height: 20px;
+}
